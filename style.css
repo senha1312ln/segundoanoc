@@ -1,36 +1,96 @@
-
-margin: 0;
-padding: 0;
-body{
-    background-color: rgb(184, 159, 230);
-    color: white;
+/* Paleta de cores */
+:root {
+    --cor-fundo: #f2f2f2;
+    --cor-destaque: #6d6868;
+    --cor-cabecalho: #333333;
+    --cor-texto: #333333;
+    --cor-links: #7c7777;
+    --cor-fundo-botoes: #ffffff;
+    --cor-bordas: #e0e0e0;
 }
 
-.cabecalho-imagem{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-cabecalho);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: var(--cor-links);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--cor-destaque);
+}
+
+.produto {
+    display: inline-block;
+    margin: 25px;
+    text-align: center;
+}
+
+.produto img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 1px solid var(--cor-bordas);
+}
+
+.produto p {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-fundo-botoes);
+    color: var(--cor-links);
+    border: 2px solid var(--cor-links);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: var(--cor-links);
+    color: #ffffff;
+}
+
+footer {
+    background-color: var(--cor-cabecalho);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
     width: 100%;
 }
-
-.cabecalho{
-    background-color: rgb(204, 172, 216);
-    color: azure;
-    display: flex;
-    justify-content: sspace-around;
-    align-items: center;
-    pdding:24px 0;
-}
-
-.cabecalho-lista-item[
-    display:inline-block;
-    margin:0 16px;
-    font-size: 24px;
-]
-
-
-
-
-
-
-
-
-
-
